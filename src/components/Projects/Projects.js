@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import netflix from "../../Assets/Projects/netflix.png";
+import kibarua from "../../Assets/Projects/kib-logo.png";
+import tar from "../../Assets/Projects/tar.jpg";
+import tfp from "../../Assets/Projects/tfp.jpg";
+import aba from "../../Assets/Projects/aba.jpg";
+
+
+
 
 function Projects() {
   return (
@@ -23,68 +25,67 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={netflix}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Netflix Clone"
+              description="A netflix clone that uses firebase for user authentication and the tmdb apia for fetching and displaying movies and titles."
+              ghLink="https://github.com/codingpanda04/netflix-clone"
+              demoLink="https://netflix-clone-ochre-pi.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={"https://verbatix.vercel.app/verbatix-logo.svg"}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Verbatix"
+              description="Made entirely in typescript,it's a text to speech software with alternative voices and accents. It's free and users can download the generated speech in mp3 format."
+              ghLink="https://github.com/codingpanda04/Verbatix---Text-To-Speech-Software"
+              demoLink="https://verbatix.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={kibarua}
+              isBlog={false}
+              title="Kibarua App"
+              description="A freelance plartform aiming to bridge the gap between middle class workers in Kenya (masons, nunnies etc). Entirely made in MERN stack but still in production."
+              ghLink="https://kibarua-app.vercel.app/"
+              demoLink="https://kibarua-app.vercel.app/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={aba}
+              isBlog={true}
+              title="A Bastard's Allure"
+              description="A paranormal romance novel that incorporates the enemies to lovers trope. Sees a bastard, Gabriel Sinclair, rise to power despite the many difficulties he faces"
+              demoLink="https://www.webnovel.com/book/a-bastard's-allure_29408191908838805"
+              ghLink="https://www.webnovel.com/book/a-bastard's-allure_29408191908838805"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tfp}
+              isBlog={true}
+              title="The Fugitive Princess"
+              description="A princess, locked in a castle to be used for the benefit of men. But what happens when she gets her hand on power regarded as forbidden and vile?"
+              ghLink="https://www.webnovel.com/book/the-fugitive-princess_24492241506957205"
+              demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tar}
+              isBlog={true}
+              title="The Assassin's Redemption"
+              description="Her goal was one: Infiltrate the castle in a guise and kill the prince. But what happens she's drawn into his annoying yet charming eyes? Will she avenge her parents when she develops a soft spot for prince Alexander?"
+              ghLink="https://www.webnovel.com/book/the-assassin's-redemption-a-princess's-journey-to-forgiveness_25780022505883505"
               demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>
