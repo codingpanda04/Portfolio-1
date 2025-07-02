@@ -7,6 +7,7 @@ import kibarua from "../../Assets/Projects/kib-logo.png";
 import tar from "../../Assets/Projects/tar.jpg";
 import tfp from "../../Assets/Projects/tfp.jpg";
 import aba from "../../Assets/Projects/aba.jpg";
+import quickstay from "../../Assets/Projects/quickstay.svg";
 
 
 
@@ -23,6 +24,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={quickstay}
+              isBlog={false}
+              title="Quick Stay"
+              description="A hotel booking website that lets users easily check in from the comfort of their home and pay seamlessly with stripe integration. For hotel owners, create and manage your hotels nad rooms and watch your revenue sky rocket."
+              ghLink="https://github.com/codingpanda04/Quickstay"
+              demoLink="https://quickstay-ashy.vercel.app"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={netflix}
