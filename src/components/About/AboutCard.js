@@ -23,10 +23,10 @@ function AboutCard() {
               <ImPointRight /> Writing Novels
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Blogs
+              <ImPointRight /> Teaching New Skills
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Debbugging
             </li>
           </ul>
 
